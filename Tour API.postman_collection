@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "57f0d153-0e0a-4159-abda-61f133252935",
+		"name": "Tour API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49559509",
+		"_collection_link": "https://tang-juyin-7819380.postman.co/workspace/jy's-Workspace~e90cdbf3-67bf-4b79-8aa5-1866acb3bd4f/collection/49559509-57f0d153-0e0a-4159-abda-61f133252935?action=share&source=collection_link&creator=49559509"
+	},
+	"item": [
+		{
+			"name": "Get All Tours",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Buddy\",\n  \"species\": \"Dog\",\n  \"age\": 1,\n  \"color\": \"Brown\",\n  \"weight\": 2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/tours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creat a Tour",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Best of Paris in 7 Days Tour\",\n  \"info\": \"Paris is synonymous with the finest things that culture can offer — in art, fashion, food, literature, and ideas. On this tour, your Paris-savvy Rick Steves guide will immerse you in the very best of the City of Light: the masterpiece-packed Louvre and Orsay museums, resilient Notre-Dame Cathedral, exquisite Sainte-Chapelle, and extravagant Palace of Versailles. You'll also enjoy guided neighborhood walks through the city's historic heart as well as quieter moments to slow down and savor the city's intimate cafés, colorful markets, and joie de vivre. Join us for the Best of Paris in 7 Days!\",\n  \"image\": \"https://www.course-api.com/images/tours/tour-1.jpeg\",\n  \"price\": \"1,995\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tour by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Buddy\",\n  \"species\": \"Dog\",\n  \"age\": 1,\n  \"color\": \"Brown\",\n  \"weight\": 2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/tours/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tours",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Tour by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"price\": \"3,995\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tours/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tours",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Tour by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Buddy\",\n  \"species\": \"Dog\",\n  \"age\": 1,\n  \"color\": \"Brown\",\n  \"weight\": 2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/tours/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tours",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
